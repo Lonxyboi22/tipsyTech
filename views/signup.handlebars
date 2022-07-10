@@ -1,18 +1,25 @@
 <form class="signup-form">
     <div>
-        <label for="username-signup">username:</label>
+        <label for="username-signup">Username:</label>
         <input type="text" id="username-signup" />
     </div>
     <div>
-        <label for="email-signup">email:</label>
+        <label for="email-signup">Email:</label>
         <input type="text" id="email-signup" />
     </div>
     <div>
-        <label for="password-signup">password:</label>
+        <label for="password-signup">Password:</label>
         <input type="password" id="password-signup" />
     </div>
     <div>
-        <button type="submit">signup</button>
+        <form action="../" onsubmit="if (this.MyCheckbox.checked == false) { alert ('You didn\'t choose any of the checkboxes!'); return false; } else { return true; }">
+            <p>Are you 21+?<p>
+            <p><input type="CHECKBOX" name="MyCheckbox" value="Yes"> Yes
+            <p><input type="CHECKBOX" name="MyCheckbox" value="No"> No</p>
+        </form>
+    </div>
+    <div>
+        <button type="submit">Sign Up!</button>
     </div>
 </form>
 
