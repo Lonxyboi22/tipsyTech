@@ -1,0 +1,59 @@
+* {
+  background-color: #001e59;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flexbox;
+  max-width: 100%;
+}
+/* L O G O */
+h1 {
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* N A V I G A T I O N */
+.nav-container {
+  margin: 0, auto;
+  position: sticky;
+}
+
+/* L O G I N  F O R M */
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.wrapper-login {
+  padding: 20px;
+  border: #06be77;
+  margin-top: 0px;
+}
+.login {
+  margin-top: 0px;
+  display: block;
+  padding: 50px;
+  color: #fbff33;
+}
+
+#inputUsername {
+  background-color: #a259ff;
+  color: #001e59;
+  border: none;
+  border-radius: 20px;
+}
+
+#inputPassword {
+  background-color: #a259ff;
+  color: #001e59;
+  border: none;
+  border-radius: 20px;
+}
+
+.login button {
+  background-color: #06be77;
+  border: none;
+}
+
+.login button:hover {
+  color: #fbff33;
+  background-color: #a259ff;
+}
