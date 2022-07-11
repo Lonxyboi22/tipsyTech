@@ -1,40 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipsy Tech</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
-</head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <header>
+      <header>
         <h1>
-            <a href="/">Tipsy Tech</a>
+          <a href="/">Tipsy Tech</a>
         </h1>
         <nav>
-            {{#if loggedIn}}
+          {{#if loggedIn}}
             <a href="/dashboard">dashboard</a>
             <button id="logout" class="btn-no-style">logout</button>
-            {{else}}
+          {{else}}
             <a href="/login">login</a>
-            {{/if}}
+          {{/if}}
         </nav>
-        </header>
-        <main>
-        {{{ body }}}
-        </main>
-        <footer>
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
         Thanks for visiting!
-        </footer>
+      </footer>
     </div>
 
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
-</body>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
 
 </html>
