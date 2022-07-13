@@ -7,7 +7,7 @@ const beerData = [
     }
 ];
 
-const seedBeer = () => User.bulkCreate(beerData);
+const seedBeer = () => Beer.bulkCreate(beerData);
 
 seedBeer();
 

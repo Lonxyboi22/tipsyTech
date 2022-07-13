@@ -2,6 +2,12 @@ const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 
+const Beer = require('./Beer');
+
+const Drinks = require('./Drinks');
+
+const Liquor = require('./Liquor');
+
 // create associations
 User.hasMany(Post, {
     foreignKey: 'user_id'
@@ -27,4 +33,4 @@ Post.hasMany(Comment, {
     foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Comment };
+module.exports = { User, Post, Comment, Beer, Drinks, Liquor };

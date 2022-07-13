@@ -7,7 +7,7 @@ const drinksData = [
     }
 ];
 
-const seedDrinks = () => User.bulkCreate(drinksData);
+const seedDrinks = () => Drinks.bulkCreate(drinksData);
 
 seedDrinks();
 
