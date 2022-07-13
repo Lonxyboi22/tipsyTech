@@ -5,22 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
-  <link rel="stylesheet" href="/public/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      
-      <nav>
+
+   <header>
+      <div id="headertitle">
+        <h1>Tipsy Tech</h1>
+      </div>
+      <div id="headernav">
+        <nav>
+          <!--navbar list element-->
+          <div class="navstyle"><a href="#loginId">Login</a></div>
+          <div class="navstyle"><a href="#signupID">Signup</a></div>
+          <div class="navstyle"><a href="#contactId">Contact Us</a></div>
+
+        </nav>
+      </div>
+    </header>
+
+
+
+      <main>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <button id="logout" class="btn-no-style button" >logout</button>
         {{else}}
         <a href="/login" class="text-info">login</a>
         {{/if}}
-      </nav>
+      </main>
+
+    
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+
 
 
 
@@ -32,9 +52,27 @@
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
+    <section id="contactID">
+<footer>
+        <div id="footertitle">
+          <h2>Contact Us</h2>
+        </div>
+        <div id="footernav">
+         
+          
+            </div>
+            <div class="navstyle">
+              <a href="https://github.com/Lonxyboi22/tipsyTech">Github</a>
+            </div>
+             <div>
+        <a href="privacy-policy.html">Read our Privacy Policy</a><br />
+        &copy; 2022 Tipsy Tech, Inc.
+      </div>
+        </section>    
+         
+          
+        </div>
+      </footer>
   </div>
 
 {{#if loggedIn}}

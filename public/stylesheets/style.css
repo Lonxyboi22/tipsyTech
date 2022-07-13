@@ -1,178 +1,402 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #225ca3;
-    font-weight: bold;
-    transition: color .1s;
-  }
-  
-  a:hover {
-    color: #3486eb;
-  }
-  
-  button {
-    background-color: #225ca3;
-    border: 0;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #3486eb;
-  }
-  
-  .post-list {
-    margin: 0;
-    padding: 0;
-  }
-  
-  textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
-  
-  form > div {
-    margin-bottom: 2%;
-  }
-  
-  form label {
-    display: block;
-  }
-  
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
-  }
-  
-  header h1 {
-    font-size: 1em;
-  }
-  
-  main {
-    flex: 1;
-    padding: 2% 4%;
-  }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
-  }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #3486eb;
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-  
-  .post {
-    margin-bottom: 2%;
-    line-height: 150%;
-  }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
-  
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
-  
-  .comment {
-    padding: 1%;
-    margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #fff5eb;
-  }
-  
-  .comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    opacity: .6;
-  }
-  
-  .new-post-form input {
-    width: 300px;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #3486eb;
+}
+
+button {
+  background-color: #225ca3;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3486eb;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+} */
+
+header h1 {
+  font-size: 1em;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: blue;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.upvote-btn {
+  background-color: #197d0f;
+  transition: background-color 0.1s;
+}
+
+.upvote-btn:hover {
+  background-color: #1f9c13;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
 
 footer {
-    border-top: 1px solid #ccc;
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 35px;
+  text-align: center;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+  margin-right: 70px;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+header {
+  display: flex;
+  background-color: darkgray;
+  height: 95px;
+  min-height: 95px;
+  width: 100%;
+  color: aqua;
+  border: blue 4px solid;
+}
+
+header h1 {
+  width: 125%;
+  background-color: blue;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+#headernav {
+  width: 75%;
+  display: inline-block;
+  align-items: center;
+  padding: 1em;
+  color: black;
+}
+
+#headernav nav {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  float: right;
+}
+
+#headertitle h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: darkgrey;
+  text-align: right;
+  font-weight: 60em;
+}
+
+#headertitle {
+  width: 9%;
+  min-width: 15%;
+  display: inline-block;
+  margin-bottom: 75px;
+}
+
+.navstyle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+  .parent {
+    flex-direction: column;
+    margin: 12px;
+  }
+
+  header {
     display: flex;
+    background-color: darkgray;
+    width: 100%;
+    color: aqua;
+    border: blue 4px solid;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #headertitle {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+    margin-top: -30px;
+  }
+
+  #headertitle h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: darkgrey;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  #headernav {
+    margin-top: -2em;
+    width: 100%;
+    align-items: center;
+    color: black;
+    float: none;
+    display: block;
+  }
+
+  #headernav nav {
+    width: 100%;
     justify-content: center;
-    padding: 1%;
-    font-size: 110%;
+  }
+
+  .navstyle {
+    font-size: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  #footertitle h2 {
+    display: block;
+    border-right: none;
+    border-bottom: 3px solid blue;
+    margin: auto;
+  }
+
+  #footernav nav {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    margin-left: none;
+    padding-left: none;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footertitle h2 {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  #footernav {
+    padding-left: 0;
+    margin-left: -20vw;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  #headernav {
+    padding-left: 0;
+    margin-left: -4vw;
+  }
+
+  .navstyle {
+    font-size: 15px;
+  }
+
+  .projects p {
+    font-size: 35px;
+  }
+
+  #About-Me h2 {
+    margin-top: 5px;
+    text-align: start;
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  #footernav {
+    padding-left: 0;
+    margin-left: -55vw;
+  }
+
+  #Work h2 {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  #footertitle h2 {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+  .hero {
+    width: 100vw;
+  }
+
+  header {
+    width: 100vw;
+  }
+
+  .subtitle {
+    margin-top: 75px;
+    margin-left: 5px;
+    align-items: center;
+  }
 }
