@@ -10,24 +10,35 @@
 </head>
 
 <body>
+<!-- L O G O -->
+<div class="top-header py-4">
+        <div class="logo">
+             <h1>
+                TIPSY
+                <br />
+                TECH
+             </h1>
 
-   <header>
-      <div id="headertitle">
-        <h1>Tipsy Tech</h1>
-      </div>
-      <div id="headernav">
-        <nav>
-          <!--navbar list element-->
-          <div class="navstyle"><a href="#loginId">Login</a></div>
-          <div class="navstyle"><a href="#signupID">Signup</a></div>
-          <div class="navstyle"><a href="#contactId">Contact Us</a></div>
+        </div>
+  </div>
 
-        </nav>
-      </div>
-    </header>
-
-
-
+   <!-- N A V I G A T I O N -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="nav-container">
+                <ul class="nav justify-content-end">
+                    <li class="home">
+                        <a class="nav-link" href="#loginId">Home</a>
+                    </li>
+                    <li class="drinks">
+                        <a class="nav-link" href="#signupId">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacId">Contact Us</a>
+                    </li>
+                </ul\>
+            </div>
+    </nav>
+</div>
       <main>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>

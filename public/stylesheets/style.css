@@ -1,45 +1,82 @@
 * {
   box-sizing: border-box;
+  background-color: #001e59;
 }
 
-body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: #333;
+.header {
+  width: 100%;
+  background-color: #001e59;
+  border: 0, auto;
 }
 
-a {
+header h1 {
+  font-size: 1em;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.nav-link {
+  color: #fff;
   text-decoration: none;
-  color: blue;
-  font-weight: bold;
-  transition: color 0.1s;
+}
+
+h1 {
+  color: #fff;
+  margin-left: 20px;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #a259ff;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #06be77;
   border: 0;
   padding: 1%;
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-button:hover {
-  background-color: #3486eb;
+/* L O G I N   F O R M  */
+h2 {
+  color: #fff;
+}
+.login-form label {
+  color: #fff;
 }
 
-.post-list {
-  margin: 0;
-  padding: 0;
+.login-form input {
+  background-color: #a259ff;
+  border: none;
+  border-radius: 20px;
+  color: #001e59;
+}
+.login-form button:hover {
+  background-color: #fff;
+  color: #06be77;
+}
+
+/* S I G N U P  F O R M */
+.signup-form label {
+  color: #fff;
+}
+
+.signup-form input {
+  background-color: #a259ff;
+  border: none;
+  border-radius: 20px;
+  color: #;
+}
+
+.signup-form button:hover {
+  background-color: #fff;
+  color: #06be77;
 }
 
 textarea,
@@ -49,17 +86,6 @@ input {
   border: 1px solid #ccc;
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
-  border: 1px solid blue;
-}
-
-textarea {
-  min-width: 40%;
-  min-height: 100px;
-}
-
 form > div {
   margin-bottom: 2%;
 }
@@ -67,7 +93,7 @@ form > div {
 form label {
   display: block;
 }
-
+/*
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -75,7 +101,7 @@ form label {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* header {
   border-bottom: 1px solid #ccc;
@@ -83,15 +109,6 @@ form label {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-} */
-
-header h1 {
-  font-size: 1em;
-}
-
-main {
-  flex: 1;
-  padding: 2% 4%;
 }
 
 .btn-no-style {
@@ -110,76 +127,7 @@ main {
 .btn-no-style:hover {
   background: none;
   color: blue;
-}
-
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
-}
-
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
-}
-
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
-
-.comment-form {
-  margin-bottom: 5%;
-}
-
-.comment {
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
-}
-
-.comment .meta {
-  font-size: 90%;
-  margin-bottom: 0.5%;
-  opacity: 0.6;
-}
-
-.new-post-form input {
-  width: 300px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
-footer {
-  background: var(--primary-color);
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
+} */
 
 footer h2 {
   color: var(--secondary-color);
@@ -199,7 +147,7 @@ footer a {
 
 header {
   display: flex;
-  background-color: darkgray;
+  background-color: #fff;
   height: 95px;
   min-height: 95px;
   width: 100%;
@@ -228,37 +176,6 @@ a:focus {
   color: black;
 }
 
-#headernav nav {
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  float: right;
-}
-
-#headertitle h1 {
-  font-weight: bold;
-  font-size: 45px;
-  color: darkgrey;
-  text-align: right;
-  font-weight: 60em;
-}
-
-#headertitle {
-  width: 9%;
-  min-width: 15%;
-  display: inline-block;
-  margin-bottom: 75px;
-}
-
-.navstyle {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 10px;
-  text-decoration: underline;
-}
-
 @media screen and (max-width: 980px) {
   .parent {
     flex-direction: column;
@@ -276,43 +193,6 @@ a:focus {
     flex-direction: column;
   }
 
-  #headertitle {
-    width: 100%;
-    padding: 0;
-    height: auto;
-    margin-bottom: 0;
-    margin-top: -30px;
-  }
-
-  #headertitle h1 {
-    font-weight: bold;
-    font-size: 45px;
-    color: darkgrey;
-    text-align: center;
-    width: 100%;
-    height: auto;
-  }
-
-  #headernav {
-    margin-top: -2em;
-    width: 100%;
-    align-items: center;
-    color: black;
-    float: none;
-    display: block;
-  }
-
-  #headernav nav {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .navstyle {
-    font-size: 20px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
   footer {
     display: block;
     text-align: center;
@@ -322,8 +202,8 @@ a:focus {
   #footertitle h2 {
     display: block;
     border-right: none;
-    border-bottom: 3px solid blue;
     margin: auto;
+    color: #fff;
   }
 
   #footernav nav {
@@ -355,43 +235,16 @@ a:focus {
     margin-left: -4vw;
   }
 
-  .navstyle {
-    font-size: 15px;
-  }
-
-  .projects p {
-    font-size: 35px;
-  }
-
-  #About-Me h2 {
-    margin-top: 5px;
-    text-align: start;
-    padding-left: 10px;
-    margin-bottom: 0;
-  }
-
   #footernav {
     padding-left: 0;
     margin-left: -55vw;
-  }
-
-  #Work h2 {
-    text-align: start;
-    padding-left: 10px;
   }
 
   #footertitle h2 {
     text-align: start;
     padding-left: 10px;
     padding-top: 15px;
-  }
-
-  .hero {
-    width: 100vw;
-  }
-
-  header {
-    width: 100vw;
+    color: #fff;
   }
 
   .subtitle {
