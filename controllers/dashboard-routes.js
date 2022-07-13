@@ -86,4 +86,8 @@ router.get('/createpost', (req, res) => {
     res.render('create-post');
 });
 
+router.get('/favorites', (req, res) => {
+    res.render('favorites');
+});
+
 module.exports = router;
