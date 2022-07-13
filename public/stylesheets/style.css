@@ -71,6 +71,13 @@ h2 {
   background-color: #a259ff;
   border: none;
   border-radius: 20px;
+<<<<<<< HEAD
+=======
+}
+
+#age-quest {
+  color: #fff;
+>>>>>>> 4376b9d34c71185f026250fea56bb0aac88985ab
 }
 
 .signup-form button:hover {
