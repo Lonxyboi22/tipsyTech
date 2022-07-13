@@ -9,7 +9,7 @@ CREATE TABLE drinks (
   description TEXT
 );
 
-CREATE TABLE liqour (
+CREATE TABLE liquor (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   description TEXT
