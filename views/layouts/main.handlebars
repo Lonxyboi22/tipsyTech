@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipsy Tech</title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link
       rel="stylesheet"
@@ -12,27 +13,30 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>
-          <a href="/">Tipsy Tech</a>
-        </h1>
-        <nav>
-          {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
-          {{else}}
-            <a href="/login">login</a>
-          {{/if}}
-        </nav>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for visiting!
-      </footer>
-    </div>
+
+    <header>
+      <h1>
+        <a href="/">
+          Tipsy
+          <br />
+          Tech</a>
+      </h1>
+      <nav class="navbar sticky-top navbar-expand-lg">
+        {{#if loggedIn}}
+          <a href="/dashboard">dashboard</a>
+          <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+          <a href="/login" class="login">login</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+
+    <footer>
+      Thanks for visiting!
+    </footer>
 
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
