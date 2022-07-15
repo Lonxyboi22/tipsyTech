@@ -1,7 +1,7 @@
 const seedUser = require('./user-seeds');
 
 const sequelize = require('../config/connection');
-const seedBeer = require('./beer');
+const seedBourbon = require('./bourbon-seeds');
 const seedDrinks = require('./drinks');
 const seedLiquor = require('./liquor');
 
@@ -10,7 +10,7 @@ const seedAll = async () => {
     console.log('\n----- DATABASE SYNCED -----\n');
     await seedUser();
     console.log('\n----- CATEGORIES SEEDED -----\n');
-    await seedBeer();
+    await seedBourbon();
     console.log('\n----- CATEGORIES SEEDED -----\n');
     await seedDrinks();
     console.log('\n----- CATEGORIES SEEDED -----\n');
