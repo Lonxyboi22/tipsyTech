@@ -25,6 +25,11 @@ Bourbon.init(
             allowNull: false,
             unique: true,
         },
+        garnish: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            unique: true
+        },
         image: {
             type: DataTypes.STRING,
             allowNull: false,
