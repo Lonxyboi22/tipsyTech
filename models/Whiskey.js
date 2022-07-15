@@ -3,12 +3,12 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our User model
-class Beer extends Model {
+class Whiskey extends Model {
   // set up method to run on instance data (per user) to check password
 }
 
 // create fields/columns for User model
-Beer.init(
+Whiskey.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -20,11 +20,16 @@ Beer.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        description: {
+        ingredients: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
         },
+        image: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
+        }
     
     },
     {
@@ -32,8 +37,8 @@ Beer.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'beer'
+        modelName: 'whiskey'
     }
 );
 
-module.exports = Beer;
+module.exports = Whiskey;
