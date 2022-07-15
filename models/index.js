@@ -3,15 +3,10 @@ const Post = require('./Post');
 const Comment = require('./Comment');
 
 const Bourbon = require('./Bourbon');
-
 const Vodka = require('./Vodka');
-
 const Rum = require('./Rum');
-
 const Tequila = require('./Tequila');
-
 const Whiskey = require('./Whiskey');
-
 const Wine = require('./Wine');
 
 // create associations
