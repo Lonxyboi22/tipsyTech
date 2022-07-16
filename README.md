@@ -41,6 +41,9 @@ Have questions about this project?
 ## Credits
 
 Tipsy Tech Team "Best 5 Alive"
+cnewing/github.com
+jpaige96/github.com
+jleitz27/github.com
 tomhoffmanco/github.com
 lonxyboi22/github.com
 =======
