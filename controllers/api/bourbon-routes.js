@@ -11,12 +11,7 @@ router.get('/', (req, res) => {
         'id',
         'name',
         'ingredients',
-<<<<<<< HEAD
-        'garnish',
-        'image'
-=======
         'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
     .then(dbBourbonData => res.json(dbBourbonData))
@@ -35,12 +30,7 @@ router.get('/:id', (req, res) => {
             'id',
             'name',
             'ingredients',
-<<<<<<< HEAD
-            'garnish',
-            'image'
-=======
             'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
     .then(dbBourbonData => {

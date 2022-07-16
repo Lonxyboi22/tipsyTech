@@ -11,11 +11,7 @@ router.get('/', (req, res) => {
         'id',
         'name',
         'ingredients',
-<<<<<<< HEAD
-        'image'
-=======
         'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
     .then(dbTequilaData => res.json(dbTequilaData))
@@ -34,11 +30,7 @@ router.get('/:id', (req, res) => {
             'id',
             'name',
             'ingredients',
-<<<<<<< HEAD
-            'image'
-=======
             'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
     .then(dbTequilaData => {
