@@ -25,7 +25,7 @@ Rum.init(
             allowNull: false,
             unique: true,
         },
-        image: {
+        garnish: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true

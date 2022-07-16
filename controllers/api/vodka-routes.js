@@ -1,24 +1,20 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Rum, User } = require('../../models');
+const { Vodka, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all users
 router.get('/', (req, res) => {
     console.log('======================');
-    Rum.findAll({
+    Vodka.findAll({
         attributes: [
         'id',
         'name',
         'ingredients',
-<<<<<<< HEAD
-        'image'
-=======
         'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
-    .then(dbRumData => res.json(dbRumData))
+    .then(dbVodkaData => res.json(dbVodkaData))
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
@@ -26,7 +22,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    Rum.findOne({
+    Vodka.findOne({
         where: {
         id: req.params.id
         },
@@ -34,19 +30,15 @@ router.get('/:id', (req, res) => {
             'id',
             'name',
             'ingredients',
-<<<<<<< HEAD
-            'image'
-=======
             'garnish'
->>>>>>> feature/seeding-drinks
         ],
     })
-    .then(dbRumData => {
-        if (!dbRumData) {
+    .then(dbVodkaData => {
+        if (!dbVodkaData) {
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
-        res.json(dbRumData);
+        res.json(dbVodkaData);
     })
     .catch(err => {
         console.log(err);
@@ -56,11 +48,11 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
 
-    Rum.create({
+    Vodka.create({
         name: req.body.name,
         ingredients: req.body.ingredients,
     })
-        .then(dbRumData => res.json(dbRumData))
+        .then(dbVodkaData => res.json(dbVodkaData))
         .catch(err => {
         console.log(err);
         res.status(500).json(err);
@@ -71,17 +63,17 @@ router.post('/', (req, res) => {
 
 
 router.delete('/:id', withAuth, (req, res) => {
-    Rum.destroy({
+    Vodka.destroy({
         where: {
         id: req.params.id
         }
     })
-    .then(dbRumData => {
-        if (!dbRumData) {
+    .then(dbVodkaData => {
+        if (!dbVodkaData) {
             res.status(404).json({ message: 'No post found with this id' });
             return;
         }
-        res.json(dbRumData);
+        res.json(dbVodkaData);
     })
     .catch(err => {
         console.log(err);

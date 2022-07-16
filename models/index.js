@@ -7,7 +7,6 @@ const Vodka = require('./Vodka');
 const Rum = require('./Rum');
 const Tequila = require('./Tequila');
 const Whiskey = require('./Whiskey');
-const Wine = require('./Wine');
 
 // create associations
 User.hasMany(Post, {
@@ -34,4 +33,4 @@ Post.hasMany(Comment, {
     foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Comment, Bourbon, Vodka, Rum, Tequila , Whiskey, Wine };
+module.exports = { User, Post, Comment, Bourbon, Vodka, Rum, Tequila , Whiskey };
