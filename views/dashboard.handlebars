@@ -50,7 +50,7 @@
 </ul>
 
 <script>
-function myFunction() {
+async function  myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -65,6 +65,12 @@ function myFunction() {
             li[i].style.display = "none";
         }
     }
+  try {
+     const query = await fetch(`http://127.0.0.1:3001/api/drinks/${input}`);
+  }catch(err) {
+    console.log(err);
+  }
+  
 }
 </script>
 
