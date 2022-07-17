@@ -21,7 +21,7 @@ Tequila.init(
             allowNull: false
         },
         ingredients: {
-            type: DataTypes.STRING,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
             unique: true,
         },
