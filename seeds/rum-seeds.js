@@ -101,7 +101,7 @@ const rumData = [
     }
 ];
 
-const seedRum = () => Rum.bulkCreate(RumData);
+const seedRum = () => Rum.bulkCreate(rumData);
 
 seedRum();
 

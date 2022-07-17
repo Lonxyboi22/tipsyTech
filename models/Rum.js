@@ -23,12 +23,12 @@ Rum.init(
         ingredients: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
+            
         },
         garnish: {
             type: DataTypes.STRING,
-            allowNull: false,
-            unique: true
+            allowNull: true,
+            
         }
     
     },

@@ -106,7 +106,7 @@ const tequilaData = [
          
     }
 ];
-const seedTequila = () => Tequila.bulkCreate(tequiladata);
+const seedTequila = () => Tequila.bulkCreate(tequilaData);
 
 seedTequila();
 
