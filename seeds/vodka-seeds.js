@@ -27,7 +27,7 @@ const vodkaData = [
     {
         name: 'Chocolate Black Russian',
         ingredients: ['1/2oz vodka', '1oz kahlua', '5oz Chocolate ice-cream'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
@@ -63,7 +63,7 @@ const vodkaData = [
     {
         name: 'Orgasm',
         ingredients: ['1/2oz vodka', '1/2oz white Creme de Cacao', '1/2oz Amaretto', '1/2oz Triple sec', '1oz Light cream'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
@@ -147,7 +147,7 @@ const vodkaData = [
     {
         name: 'Screaming Orgasm',
         ingredients: ['1oz Vodka', '1/2oz Kahlua', '1 1/2oz Baileys irish cream'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
@@ -159,7 +159,7 @@ const vodkaData = [
     {
         name: 'Aztec Punch',
         ingredients: ['5oz Vodka', '8oz Lemonade', '7oz Rum', '1 bottle Ginger ale'],
-        garnish: null
+        garnish: 'n/a'
     },
     {
         name: 'Kool-aid Slammer',

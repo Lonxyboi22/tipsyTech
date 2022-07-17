@@ -15,19 +15,19 @@ const rumData = [
     {
         name: 'Tia-Maria',
         ingredients: ['1cup Rum', '1cup Water', '1cup Brown sugar', '4tsp coffee', '4tsp Vanilla extract'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
         name: 'Aztec Punch',
         ingredients: ['5oz Vodka', '8oz Lemonade', '7oz Rum', '1 bottle Ginger ale'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
         name: 'Zippys Revenge',
         ingredients: ['2oz Rum', '2oz Amaretto', '4oz Kool-Aid of choice'],
-        garnish: null
+        garnish: 'n/a'
     },
     {
         name: 'Rum Punch',
@@ -55,7 +55,7 @@ const rumData = [
     {
         name: 'Radioactive Long Island',
         ingredients: ['1oz Vodka', '1oz Rum', '1oz Gin', '1oz Tequila', '1oz Triple sec', '1oz Raspberry liqueur', '1oz Melon liqueur', '1oz Malibu rum'],
-        garnish: null
+        garnish: 'n/a'
     },
     {
         name: 'Hemingway Special',

@@ -14,12 +14,12 @@ const tequilaData = [
     {
         name: 'Radioactive Long Island',
         ingredients: ['1oz Vodka', '1oz Rum', '1oz Gin', '1oz Tequila', '1oz Triple sec', '1oz Raspberry liqueur', '1oz Melon liqueur', '1oz Malibu rum'],
-        garnish: null
+        garnish: 'n/a'
     },
     {
         name: 'Tequila Fizz',
         ingredients: ['2oz Tequila', '2tbsp Lemon juice', '3/4oz Grenadine', '1 Egg White', 'Ginger ale'],
-        garnish: null
+        garnish: 'n/a'
          
     },
     {
@@ -37,7 +37,7 @@ const tequilaData = [
     {
         name: 'Brave Bull Shooter',
         ingredients: ['1/2oz Tequila', '1/2oz Tobasco sauce'],
-        garnish: null
+        garnish: 'n/a'
     },
     {
         name: 'Tequila Sunrise',

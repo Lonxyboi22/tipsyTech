@@ -27,8 +27,7 @@ Rum.init(
         },
         garnish: {
             type: DataTypes.STRING,
-            allowNull: false,
-            unique: true
+            allowNull: false
         }
     
     },
