@@ -1,4 +1,4 @@
-
+const { Tequila } = require('../models');
 
 const tequilaData = [
     {
@@ -104,4 +104,10 @@ const tequilaData = [
         garnish: 'serve over ice'
          
     }
-]
+];
+
+const seedTequila = () => Tequila.bulkCreate(tequilaData);
+
+seedTequila();
+
+module.exports = seedTequila;
