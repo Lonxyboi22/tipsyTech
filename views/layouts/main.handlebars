@@ -39,6 +39,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact Us</a>
                     </li>
+                    {{#if loggedIn}}
+                    <li class="nav-item"><button id="logout" class="btn-no-style button" >Logout</button></li>
+                    {{else}}
+                    {{/if}}
                 </ul\>
             </div>
     </nav>
@@ -46,9 +50,7 @@
       <main>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style button" >logout</button>
         {{else}}
-        <a href="/login" class="text-info">login</a>
         {{/if}}
       </main>
 
