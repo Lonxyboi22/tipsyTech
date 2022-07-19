@@ -86,4 +86,7 @@ router.get('/createpost', (req, res) => {
     res.render('create-post');
 });
 
+router.get('/bourbon', (req, res) => {
+    res.render('bourbon');
+});
 module.exports = router;

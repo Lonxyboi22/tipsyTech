@@ -204,7 +204,10 @@ const vodkaData = [
     }
 ];
 
-const seedVodka = () => Vodka.bulkCreate(vodkaData);
+const seedVodka = () => {
+    Vodka.bulkCreate(vodkaData);
+    await Vodka.bulkCreate(vodkaData);
+};
 
 seedVodka();
 

@@ -1,0 +1,9 @@
+<ol class="tequila-list">
+  {{#each tequilaPosts as |tequilaPost|}}
+  <li>
+    {{> tequila-details tequilaPost }}
+  </li>
+  {{/each}}
+</ol>
+
+<a href="/dashboard"> &larr; Back to dashboard</a>
