@@ -1,0 +1,9 @@
+<ol class="rum-list">
+  {{#each rumPosts as |rumPost|}}
+  <li>
+    {{> rum-details rumPost }}
+  </li>
+  {{/each}}
+</ol>
+
+<a href="/dashboard"> &larr; Back to dashboard</a>
