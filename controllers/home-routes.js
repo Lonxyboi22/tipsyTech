@@ -162,4 +162,61 @@ router.get('/bourbon', (req, res) => {
         });
 });
 
+router.get('/rum/:id', (req, res) => {
+    Rum.findOne({
+        where: {
+        id: req.params.id
+        },
+        attributes: [
+            'id',
+            'name',
+            'ingredients',
+            'garnish'
+        ],
+    })
+    .then(dbRumData => {
+        if (!dbRumData) {
+            res.status(404).json({ message: 'No post found with this id' });
+            return;
+        }
+        // serialize the data
+        const rumPost = dbRumData.get({ plain: true });
+    
+        // pass data to template
+        res.render('rum-details', {
+            rumPost,
+            loggedIn: req.session.loggedIn
+            });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.get('/rum', (req, res) => {
+    console.log(req.session);
+    Rum.findAll({
+        attributes: [
+            'id',
+            'name',
+            'ingredients',
+            'garnish'
+        ],
+    })
+    
+        .then(dbRumData => {
+            // pass a single post object into the homepage template
+            const rumPosts = dbRumData.map(rumPost => rumPost.get({ plain: true }));
+            res.render('rum', {
+                rumPosts,
+                loggedIn: req.session.loggedIn
+                });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
 module.exports = router;
