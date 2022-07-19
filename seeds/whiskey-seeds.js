@@ -4,7 +4,10 @@ const whiskeyData = [
     
 ];
 
-const seedWhiskey = () => Whiskey.bulkCreate(whiskeyData);
+const seedWhiskey = () => {
+    Whiskey.bulkCreate(whiskeyData);
+    await Whiskey.bulkCreate(whiskeyData);
+};
 
 seedWhiskey();
 
