@@ -2,9 +2,9 @@ const { Whiskey } = require('../models');
 
 const whiskeyData = [
     {
-        name: 'Damned if you do',
-        ingredients: 'Pour into shot glass. Put in mouth. Repeat as deemed necessary',
-        garnish: null
+        name: 'Apple Bomb',
+        ingredients: '1.5oz Crown Royal Regal Apple, 3oz pineapple juice, 1oz cranberry juice',
+        garnish: 'apple slice'
     },
     {
         name: 'Hot Toddy',
@@ -14,10 +14,9 @@ const whiskeyData = [
     {
         name: 'Owens Grandmothers Revenge',
         ingredients: '12 oz Whiskey, 12 oz Beer, 2 oz frozen Lemonade, 1 cup crushed Ice',
-        garnish: null
+        garnish: 'lemon slice'
     }
 ];
-
 const seedWhiskey = () => {
     Whiskey.bulkCreate(whiskeyData);
     await Whiskey.bulkCreate(whiskeyData);
