@@ -5,6 +5,7 @@ const seedBourbon = require('./bourbon-seeds');
 const seedRum = require('./rum-seeds');
 const seedTequila = require('./tequila-seeds');
 const seedVodka = require('./vodka-seeds');
+const seedWhiskey = require('./whiskey-seeds');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true });
@@ -18,6 +19,8 @@ const seedAll = async () => {
     await seedTequila();
     console.log('\n----- CATEGORIES SEEDED -----\n');
     await seedVodka();
+    console.log('\n----- CATEGORIES SEEDED -----\n');
+    await seedWhiskey();
     console.log('\n----- CATEGORIES SEEDED -----\n');
 
 
