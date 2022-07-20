@@ -103,7 +103,7 @@ const rumData = [
 
 const seedRum = () => {
     Rum.bulkCreate(rumData);
-    
+
 };
 
 seedRum();

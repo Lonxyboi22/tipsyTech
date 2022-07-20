@@ -17,8 +17,10 @@ const whiskeyData = [
         garnish: 'lemon slice'
     }
 ];
+
 const seedWhiskey = () => Whiskey.bulkCreate(whiskeyData);
     
+
 
 seedWhiskey();
 

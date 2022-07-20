@@ -13,6 +13,7 @@ const bourbonData = [
     }
 ];
 
+
 const seedBourbon = () => Bourbon.bulkCreate(bourbonData);
     
 
