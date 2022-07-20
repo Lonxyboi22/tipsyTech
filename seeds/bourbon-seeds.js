@@ -13,11 +13,9 @@ const bourbonData = [
     }
 ];
 
-const seedBourbon = () => {
-    Bourbon.bulkCreate(bourbonData);
-    await Bourbon.bulkCreate(bourbonData);
 
-};
+const seedBourbon = () => Bourbon.bulkCreate(bourbonData);
+    
 
 seedBourbon();
 
